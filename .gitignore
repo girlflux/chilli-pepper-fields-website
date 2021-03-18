@@ -1,0 +1,9 @@
+# npm dependencies
+node_modules
+
+# build
+_public
+
+# other folders
+Referencias
+assets

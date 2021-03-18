@@ -1,0 +1,24 @@
+{
+    "contacts":[
+        {
+            "name":"Victor Butuc",
+            "role":"Label Manager",
+            "email":"butuc@chillipepperfields.com"
+        },
+        {
+            "name":"João Pedro Silva",
+            "role":"Project Manager",
+            "email":"j@chillipepperfields.com"
+        },
+        {
+            "name":"Rafael Farias",
+            "role":"Project Manager",
+            "email":"fariaz@chillipepperfields.com"
+        },
+        {
+            "name":"Catarina Soares",
+            "role":"Head of Communication",
+            "email":"catarina@chillipepperfields.com"
+        }
+    ]
+}

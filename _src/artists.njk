@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Artists
+---
+
+<div class="artistList">
+    {% for artist in artistList.artists %}
+    <div class="artist">
+        <a href="/artists/{{ artist.title | slug }}"><h2>{{ artist.title }}</h2></a>
+        <figure>
+            <img src="{{ artist.imgFeatured}}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight}}">
+        </figure>
+    </div>
+    {% endfor %}
+</div>

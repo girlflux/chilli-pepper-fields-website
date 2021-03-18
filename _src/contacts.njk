@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Contacts
+---
+
+<div class="contactList">
+    {% for contacts in contactsList.contacts %}
+    <div class="contact">
+        <h2>{{ contacts.name }}</h2>
+        <p>{{ contacts.role }}</p>
+        <a href="mailto:'{{ contacts.email }}'">{{ contacts.email }}</a>
+    </div>
+    {% endfor %}
+</div>

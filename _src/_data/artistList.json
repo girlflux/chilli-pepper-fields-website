@@ -1,0 +1,115 @@
+{
+    "artists":[
+        {
+            "title":"Bearbug",
+            "imgFeatured":"/assets/artists/artista-bearbug-1242w-843h.jpg",
+            "imgAlt":"Bearbug, back faced to the camera, gazing into the horizon, over the mountains.",
+            "imgWidth":"1242",
+            "imgHeight":"843",
+            "description":"Not a bear, not a bug.",
+            "links":[
+                {
+                    "type":"bandcamp",
+                    "url":"https://bearbug.bandcamp.com/releases"
+                },
+                {
+                    "type":"instagram",
+                    "url":"https://www.instagram.com/_bearbug_/"
+                },
+                {
+                    "type":"youtube",
+                    "url":"https://www.youtube.com/channel/UCan3OOTkANFxMhHBD0pt0_g/"
+                }
+            ]
+        },
+
+        {
+            "title":"h0b0",
+            "imgFeatured":"/assets/artists/artista-h0b0-1500w-1500h.jpg",
+            "imgAlt":"h0b0 posing in front of a tree, during the day, in the fields. Everything is blurry.",
+            "imgWidth":"1500",
+            "imgHeight":"1500",
+            "description":"Don't go, no bo, h0b0.",
+            "links":[
+                {
+                    "type":"website",
+                    "url":"https://h0b0.me"
+                },
+                {
+                    "type":"linktree",
+                    "url":"https://linktr.ee/h0b0"
+                },
+                {
+                    "type":"bandcamp",
+                    "url":"https://h0b0.bandcamp.com/"
+                },
+                {
+                    "type":"instagram",
+                    "url":"https://www.instagram.com/h0b0.o/"
+                }
+            ]
+        },
+
+        {
+            "title":"The Lemon Lovers",
+            "imgFeatured":"/assets/artists/artista-thelemonlovers-970w-1010h.jpg",
+            "imgAlt":"Inside an old store. Filled up to the ceiling with lamps and elaborate chandeliers. Intrigued, half of the duo gazes down. Further back, the other half, hooded, looks in our direction.",
+            "imgWidth":"970",
+            "imgHeight":"1010",
+            "description":"Limonada com hortelã <3.",
+            "links":[
+                {
+                    "type":"website",
+                    "url":"http://www.thelemonlovers.com"
+                },
+                {
+                    "type":"linktree",
+                    "url":"https://linktr.ee/thelemonlovers/"
+                },
+                {
+                    "type":"bandcamp",
+                    "url":"https://thelemonlovers.bandcamp.com/"
+                },
+                {
+                    "type":"instagram",
+                    "url":"https://www.instagram.com/the.lemon.lovers/"
+                },
+                {
+                    "type":"youtube",
+                    "url":"https://www.youtube.com/user/TheLemonLoversBand"
+                },
+                {
+                    "type":"facebook",
+                    "url":"https://www.facebook.com/TheLemonLovers"
+                }
+            ]
+        },
+
+        {
+            "title":"SHANGE",
+            "imgFeatured":"/assets/artists/artista-shange-2660w-1800h.jpg",
+            "imgAlt":"SHANGE, with a soft smile, gazes curiously into the side. He is in the middle of a cornfield, corn further above the head. Facing the camera sideways the face is set alight with warm and cold lights.",
+            "imgWidth":"2660",
+            "imgHeight":"1800",
+            "description":"Shange?",
+            "links":[
+                {
+                    "type":"bandcamp",
+                    "url":"https://shange.bandcamp.com/"
+                },
+                {
+                    "type":"youtube",
+                    "url":"https://www.youtube.com/channel/UCzSV9-Rpie6mz0IQj3eKXOQ"
+                },
+                {
+                    "type":"instagram",
+                    "url":"https://www.instagram.com/shangemusic/"
+                },
+                {
+                    "type":"facebook",
+                    "url":"https://www.facebook.com/shangemusic/"
+                }
+            ]
+        }
+    ]
+}

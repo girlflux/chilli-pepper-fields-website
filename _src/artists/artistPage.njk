@@ -1,0 +1,23 @@
+---
+layout: artist.njk
+tags: artist
+
+pagination:
+    data: artistList.artists
+    size: 1
+    alias: artist
+permalink: "artists/{{ artist.title | slug }}/"
+---
+
+<h1>{{ artist.title }}</h1>
+<figure>
+    <img src="{{ artist.imgFeatured }}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight }}">
+</figure>
+<section>
+<p>{{ artist.description }}</p>
+</section>
+<aside>
+    {% for link in artist.links %}
+    <a href="{{ link.url }}">{{ link.type }}</a>
+    {% endfor %}
+</aside>
