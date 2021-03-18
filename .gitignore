@@ -1,9 +1,9 @@
 # npm dependencies
 node_modules
 
-# build
-_public
+# build folder
+/_public
 
 # other folders
-Referencias
-assets
+/Referencias
+/assets
