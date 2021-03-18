@@ -7,7 +7,7 @@ title: Contacts
     {% for contacts in contactsList.contacts %}
     <div class="contact">
         <h2>{{ contacts.name }}</h2>
-        <p>{{ contacts.role }}</p>
+        <h3>{{ contacts.role }}</h3>
         <a href="mailto:'{{ contacts.email }}'">{{ contacts.email }}</a>
     </div>
     {% endfor %}
