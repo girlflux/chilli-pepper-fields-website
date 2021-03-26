@@ -1,23 +1,29 @@
 ---
-layout: artist.njk
+layout: base.njk
 tags: artist
+maxWidth: true
 
 pagination:
     data: artistList.artists
     size: 1
     alias: artist
 permalink: "artists/{{ artist.title | slug }}/"
+
+eleventyComputed:
+  pageTitle: "{{ artist.title }}"
+  title: "{{ artist.title }}"
 ---
 
-<h1>{{ artist.title }}</h1>
-<figure>
-    <img src="{{ artist.imgFeatured }}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight }}">
-</figure>
-<section>
-<p>{{ artist.description }}</p>
-</section>
-<aside>
-    {% for link in artist.links %}
-    <a href="{{ link.url }}">{{ link.type }}</a>
-    {% endfor %}
-</aside>
+            <article class="artistContent">
+                <figure>
+                    <img src="{{ artist.imgFeatured }}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight }}">
+                </figure>
+                <section>
+                    {% include artist.description + ".njk" ignore missing %}
+                </section>
+                <aside class="links" aria-label="Artist's links">
+                    {% for link in artist.links %}
+                    <a href="{{ link.url }}" {% if link.class == "external" %} class="external" target="_blank"{% endif %}>{{ link.type }}</a>
+                    {% endfor %}
+                </aside>
+            </article>

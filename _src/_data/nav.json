@@ -1,0 +1,30 @@
+{
+    "menu":[
+        {
+            "text":"◯",
+            "url":"/",
+            "title":"Homepage"
+        },
+        {
+            "text":"Artists",
+            "url":"/artists/",
+            "title":"Artist List"
+        },
+        {
+            "text":"Info",
+            "url":"/info/",
+            "title":"Contact and Label Information"
+        },
+        {
+            "text":"💸",
+            "url":"https://chillipepperfields.bandcamp.com/merch",
+            "title":"Store @bandcamp",
+            "class":"external"
+        },
+        {
+            "text":"🌶️",
+            "url":"/404.html",
+            "title":"404"
+        }
+    ]
+}

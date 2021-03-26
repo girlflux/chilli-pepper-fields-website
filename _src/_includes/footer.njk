@@ -1,8 +1,11 @@
 <footer>
-    <nav>
-        <a href="/">◯</a>
-        <a href="/about">about — sobre</a>
-        <a href="/artists">artist(a)s</a>
-        <a href="/contacts">contact(o)s</a>
+    <nav role="navigation" aria-label="Main Menu">
+        <ul>
+            {% for link in nav.menu %}
+            <li title="{{ link.title }}">
+                <a href="{{ link.url }}"{% if page.url == link.url%} aria-current="location"{% endif %} {% if link.class == "external" %} class="external" target="_blank"{% endif %}>{{ link.text }}</a>
+            </li>
+            {% endfor %}
+        </ul>
     </nav>
 </footer>

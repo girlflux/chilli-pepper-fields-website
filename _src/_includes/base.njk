@@ -8,15 +8,17 @@
 
         <link rel="stylesheet" href="/css/style.css">
 
-        <title>{{ title }}</title>
+        <title>{{pageTitle}}</title>
     </head>
     <body>
-        <header>
-            {% if title %} <h1>{{ title }}</h1> {% endif %}
-        </header>
-        <main>
+        {% include 'header.njk' %}
+        {% if logo == true -%}
+        {{ content | safe }}
+        {% else %}
+        <main {% if maxWidth == true -%} class="maxWidth" {% endif %}>
             {{ content | safe }}
         </main>
+        {% endif %}
         {% include 'footer.njk' %}
     </body>
 </html>
