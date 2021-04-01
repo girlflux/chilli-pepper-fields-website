@@ -7,14 +7,16 @@ title: Artists
     <ul class="artistList grid">
     {% for artist in artistList.artists %}
         <li class="aspect-ratio ar-5-6">
-            <div class="artistCard">
-                <figure class="aspect-ratio ar-1-1">
-                    <img src="{{ artist.imgFeatured}}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight}}">
-                </figure>
-                <h2>
-                    <a href="/artists/{{ artist.title | slug }}">{{ artist.title }}</a>
-                </h2>
-            </div>
+            <a href="/artists/{{ artist.title | slug }}">
+                <div class="artistCard">
+                    <figure class="aspect-ratio ar-1-1">
+                        <img src="{{ artist.imgFeatured}}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight}}">
+                    </figure>
+                    <h2>
+                        <a href="/artists/{{ artist.title | slug }}">{{ artist.title }}</a>
+                    </h2>
+                </div>
+            </a>
         </li>
     {% endfor %}
     </ul>

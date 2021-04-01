@@ -1,6 +1,5 @@
-/* Colour Schemes
+/* VARIABLES
 ----------------------------------------------------- */
-
 :root {
     --color-text-main: hsl(0, 0%, 4%);
     --color-link: hsl(0, 0%, 4%);
@@ -10,10 +9,11 @@
     --color-underline: hsl(0, 0%, 45%);
     --color-underline-hover: hsl(0, 0%, 4%);
     --font-base-size: 1.1rem;
+    --p-margin-bottom: 1.1rem;
 }
 
 
-/* Box-sizing reset
+/* BOX-SIZING RESET
 ----------------------------------------------------- */
 html {
     box-sizing: border-box;
@@ -42,12 +42,12 @@ main {
 }
 
 .maxWidth {
-    max-width: 80rem;
+    max-width: 100rem;
 }
 
-/* main {
+main {
     margin-bottom: 4.5625rem;
-} */
+}
 
 footer {
     position: fixed;
@@ -97,6 +97,23 @@ figure {
     gap: 1rem;
 }
 
+[aria-current] {
+    background-color: var(--color-nav-current);
+}
+
+/* copied from mdn*/
+a.external:hover::after {
+    background: transparent url(https://developer.mozilla.org/static/media/external.e091ac5d.svg) 0 0 no-repeat;
+    background-size: var(--font-base-size);
+    content: "";
+    display: inline-block;
+    margin-left: 3px;
+    height: var(--font-base-size);
+    width: var(--font-base-size);
+}
+
+/* ARTIST LIST
+----------------------------------------------------- */
 /* ul */
 .artistList {
     margin: 0;
@@ -115,16 +132,21 @@ figure {
     object-fit: cover;
 }
 
-.artistContent {
-    display: grid;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+/* ARTIST PAGE
+----------------------------------------------------- */
+.artistContent section {
+    padding: 1rem;
+    border: black solid 1px;
 }
 
-.artistContent figure {
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
+.links {
+    border: black solid 1px;
+}
+
+.links ul {
+    margin: 0;
+    padding: 1rem;
+    list-style-type: none;
 }
 
 .artistContent img {
@@ -132,27 +154,20 @@ figure {
     height: auto;
 }
 
+/* INFO PAGE
+----------------------------------------------------- */
+.contactList {
+    display: grid;
+    grid-template-columns: repeat(1, 91mm);
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
 .contact {
     max-width: 91mm;
-    max-height: 51mm;
+    max-height: 55mm;
     padding: 1rem;
-    margin-bottom: 2rem;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-[aria-current] {
-    background-color: var(--color-nav-current);
-}
-
-/* copied from mdn*/
-a.external::after {
-    background: transparent url(https://developer.mozilla.org/static/media/external.e091ac5d.svg) 0 0 no-repeat;
-    background-size: var(--font-base-size);
-    content: "";
-    display: inline-block;
-    margin-left: 3px;
-    height: var(--font-base-size);
-    width: var(--font-base-size);
 }
 
 /* ASPECT RATIO
@@ -181,13 +196,18 @@ a.external::after {
     padding-top: 100%;
 }
 
-/* Typography
+/* TYPOGRAPHY
 ----------------------------------------------------- */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: var(--font-base-size);
     word-spacing: .02em;
     color: var(--color-text-main-color);
+}
+
+p {
+    margin: 0;
+    margin-bottom: var(--p-margin-bottom);
 }
 
 h1 {
@@ -224,7 +244,7 @@ a:focus {
     outline: var(--color-focus) solid;
 }
 
-/* Responsive Behaviour
+/* RESPONSIVE BEHAVIOUR
 ----------------------------------------------------- */
 /* 25*16=400 */
 @media screen and (min-width: 25rem) {
@@ -251,6 +271,16 @@ a:focus {
 @media screen and (min-width: 35rem) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* 47*16=752 */
+@media screen and (min-width: 47rem) {
+    .contactList {
+        display: grid;
+        grid-template-columns: repeat(2, 91mm);
+        grid-template-rows: auto;
         gap: 2rem;
     }
 }
