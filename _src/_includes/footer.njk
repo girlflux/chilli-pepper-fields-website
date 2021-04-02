@@ -3,7 +3,7 @@
         <ul>
             {% for link in nav.menu %}
             <li title="{{ link.title }}">
-                <a href="{{ link.url }}"{% if page.url == link.url%} aria-current="location"{% endif %} {% if link.class == "external" %} class="external" target="_blank"{% endif %}>{{ link.text }}</a>
+                <a href="{{ link.url | url }}"{% if page.url == link.url%} aria-current="location"{% endif %} {% if link.class == "external" %} class="external" target="_blank"{% endif %}>{{ link.text }}</a>
             </li>
             {% endfor %}
         </ul>

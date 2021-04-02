@@ -1,7 +1,7 @@
 {
   "name": "chilli-pepper-fields-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Chilli Pepper Fields — label website",
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
