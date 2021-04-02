@@ -8,6 +8,7 @@
     --bg-color-hover: linear-gradient(to right, hsla(219, 73%, 41%, 0.8) 0%, hsla(216, 87%, 77%, 0.8) 65%, hsla(3, 89%, 82%, 0.8) 85%, hsla(41, 97%, 60%, 0.8) 100%);
     --color-underline: hsl(0, 0%, 45%);
     --color-underline-hover: hsl(0, 0%, 4%);
+    
     --font-base-size: 1.1rem;
     --p-margin-bottom: 1.1rem;
     --background-color: white;
