@@ -7,7 +7,6 @@ module.exports = function(eleventyConfig) {
         dir: {
             input: "_src",
             output: "_public",
-            pathPrefix: "/chilli-pepper-fields-website/"
         },
     };
 };
