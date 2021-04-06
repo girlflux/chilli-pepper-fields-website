@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "deploy": "gh-pages -d _public"
   },
+  "homepage": "/chilli-pepper-fields-website",
   "keywords": [],
   "author": "",
   "license": "ISC",
