@@ -7,8 +7,10 @@
     "start": "eleventy --serve",
     "build": "eleventy"
   },
-  "keywords": [],
-  "author": "",
+  "author": {
+    "name": "girlflux",
+    "url": "https://girlflux.xyz"
+  },
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.11.1"
