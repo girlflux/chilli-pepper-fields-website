@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "deploy": "gh-pages -d _public"
+    "deploy": "gh-pages -d dist"
   },
   "author": {
     "name": "girlflux",
