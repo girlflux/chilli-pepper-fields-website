@@ -10,10 +10,10 @@ title: Artists
             <a href="/artists/{{ artist.title | slug }}">
                 <div class="artistCard">
                     <figure class="aspect-ratio ar-1-1">
-                        <img src="{{ artist.imgFeatured}}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight}}">
+                        <img src="{{ artist.imgFeatured | url }}" alt="{{ artist.imgAlt }}" width="{{ artist.imgWidth }}" height="{{ artist.imgHeight}}">
                     </figure>
                     <h2>
-                        <a href="/artists/{{ artist.title | slug }}">{{ artist.title }}</a>
+                        <a href="/artists/{{ artist.title | slug url }}">{{ artist.title }}</a>
                     </h2>
                 </div>
             </a>
