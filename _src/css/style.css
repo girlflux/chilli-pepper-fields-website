@@ -143,9 +143,14 @@ a.external:hover::after {
     gap: 1rem;
 }
 
+.side {
+    order: 0;
+}
+
 .artistContent section {
     padding: 1rem;
     border: black solid 1px;
+    order: 1;
 }
 
 .side .sticky {
@@ -304,10 +309,12 @@ a:focus {
     
     .artistContent section {
         grid-column: 1 / 3;
+        order: unset;
     }
 
     .side {
         display: block;
+        order: unset;
     }
 
     .sticky {
