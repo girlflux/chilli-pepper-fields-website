@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
-    "deploy": "gh-pages -d dist"
+    "build": "eleventy"
   },
   "author": {
     "name": "girlflux",
