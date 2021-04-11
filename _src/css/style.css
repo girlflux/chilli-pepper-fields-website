@@ -5,7 +5,23 @@
     --color-link: hsl(0, 0%, 4%);
     --color-focus: hsl(0, 0%, 4%);
     --color-nav-current: hsla(332, 67%, 64%, 0.336);
-    --bg-color-hover: linear-gradient(to right, hsla(219, 73%, 41%, 0.8) 0%, hsla(216, 87%, 77%, 0.8) 65%, hsla(3, 89%, 82%, 0.8) 85%, hsla(41, 97%, 60%, 0.8) 100%);
+    --bg-color-hover: linear-gradient(to right, hsla(219, 73%, 41%, 0.8) 0%,
+                                                hsla(216, 87%, 77%, 0.8) 65%,
+                                                hsla(3, 89%, 82%, 0.8) 85%,
+                                                hsla(41, 97%, 60%, 0.8) 100%);
+    --bg-color-trippy: linear-gradient(180deg, hsla(219, 73%, 41%, 1.0) 0%,
+                                                hsla(219, 73%, 41%, 1.0) 5%,
+                                                hsla(216, 86%, 77%, 1.0) 25%,
+                                                hsla(3, 89%, 82%, 1.0) 35%,
+                                                hsla(41, 97%, 60%, 1.0) 42%,
+                                                hsla(2, 69%, 57%, 1.0) 46%,
+                                                hsla(259, 43%, 38%, 1.0) 55%,
+                                                hsla(240, 62%, 27%, 1.0) 66%,
+                                                hsla(232, 89%, 21%, 1.0) 71%,
+                                                hsla(221, 85%, 10%, 1.0) 79%,
+                                                hsla(220, 98%, 18%, 1.0) 85%,
+                                                hsla(219, 73%, 41%, 1.0) 95%,
+                                                hsla(219, 73%, 41%, 1.0) 100%);
     --color-underline: hsl(0, 0%, 45%);
     --color-underline-hover: hsl(0, 0%, 4%);
     --font-base-size: 1.1rem;
@@ -13,6 +29,25 @@
     --background-color: white;
 }
 
+/* ANIMATIONS
+----------------------------------------------------- */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scrollingBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100%;
+    }
+}
 
 /* BOX-SIZING RESET
 ----------------------------------------------------- */
@@ -79,15 +114,34 @@ figure {
 }
 
 .logo {
-    display: flex;
-    align-items: top;
-    justify-content: left;
+    display: grid;
+    place-content: center;
     min-height: 100vh;
-    padding-top: 1rem;
 }
 
-.logo img {
-    width: 8rem;
+.trippy {
+    background: var(--bg-color-trippy);
+    background-size: 100% 3000%;
+    animation: scrollingBackground 30s infinite linear;
+}
+
+.svgContainer {
+    padding: 1rem;
+}
+
+#label {
+    transform-origin: center center;
+    animation: spin 100s infinite ease-in-out;
+}
+
+#collective {
+    transform-origin: center center;
+    animation: spin 110s infinite ease-in-out;
+}
+
+#management {
+    transform-origin: center center;
+    animation: spin 120s infinite ease-in-out;
 }
 
 .grid {
@@ -100,17 +154,6 @@ figure {
 
 [aria-current] {
     background-color: var(--color-nav-current);
-}
-
-/* copied from mdn*/
-a.external:hover::after {
-    background: transparent url(https://developer.mozilla.org/static/media/external.e091ac5d.svg) 0 0 no-repeat;
-    background-size: var(--font-base-size);
-    content: "";
-    display: inline-block;
-    margin-left: 3px;
-    height: var(--font-base-size);
-    width: var(--font-base-size);
 }
 
 /* ARTIST LIST
@@ -269,16 +312,9 @@ a:focus {
 /* RESPONSIVE BEHAVIOUR
 ----------------------------------------------------- */
 /* 25*16=400 */
-@media screen and (min-width: 25rem) {
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    
-    .logo img {
-        width: 40vh;
+@media screen and (min-width: 25rem) {    
+    .svgContainer {
+        width: 60vh;
     }
 }
 
@@ -290,6 +326,10 @@ a:focus {
 
     h2 {
         margin-top: 1.5rem;
+    }
+
+    .svgContainer {
+        padding: 0;
     }
 }
 

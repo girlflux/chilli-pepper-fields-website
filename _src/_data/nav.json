@@ -13,18 +13,18 @@
         {
             "text":"Info",
             "url":"/info/",
-            "title":"Contact and Label Information"
+            "title":"Contact Information"
         },
         {
             "text":"🎵",
             "url":"https://chillipepperfields.bandcamp.com/merch",
-            "title":"Store @bandcamp",
+            "title":"Store at bandcamp",
             "class":"external"
         },
         {
             "text":"📷",
             "url":"https://www.instagram.com/chillipepperfields/",
-            "title":"Social @instagram",
+            "title":"Social at instagram",
             "class":"external"
         },
         {
