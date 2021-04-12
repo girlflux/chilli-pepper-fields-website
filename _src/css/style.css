@@ -124,6 +124,9 @@ figure {
     background-size: 100% 3000%;
     animation: scrollingBackground 30s infinite linear;
 }
+svg {
+    position: relative;
+}
 
 .svgContainer {
     padding: 1rem;
