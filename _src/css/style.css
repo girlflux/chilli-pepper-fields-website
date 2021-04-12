@@ -124,12 +124,14 @@ figure {
     background-size: 100% 3000%;
     animation: scrollingBackground 30s infinite linear;
 }
+
 svg {
     position: relative;
 }
 
 .svgContainer {
     padding: 1rem;
+    width: 100vw;
 }
 
 #label {
@@ -317,7 +319,7 @@ a:focus {
 /* 25*16=400 */
 @media screen and (min-width: 25rem) {    
     .svgContainer {
-        width: 60vh;
+        max-width: 60vh;
     }
 }
 
