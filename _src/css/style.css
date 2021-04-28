@@ -329,6 +329,8 @@ a[href*="http"]::after {
 
 /* RESPONSIVE BEHAVIOUR
 ----------------------------------------------------- */
+/* calc(minContentSize + (maxContentSize - minContentSize) * ((100vw - minScreenSize) / (maxScreenSize - minScreenSize)) */
+
 /* 25*16=400 */
 @media screen and (min-width: 25rem) {    
     nav ul {
@@ -347,7 +349,6 @@ a[href*="http"]::after {
     }
 
     .svgContainer {
-        max-height: 30rem;
         max-width: 30rem;
     }
 }
