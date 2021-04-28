@@ -130,7 +130,7 @@ figure {
 .logo {
     display: grid;
     place-content: center;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .trippy {
@@ -347,6 +347,7 @@ a[href*="http"]::after {
     }
 
     .svgContainer {
+        max-height: 30rem;
         max-width: 30rem;
     }
 }
